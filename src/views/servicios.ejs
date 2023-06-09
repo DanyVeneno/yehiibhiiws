@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= title %></title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/site.webmanifest" />
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+
+    <%- include('partials/head')%>
+  </head>
+
+  <body class="demo-1 loading">
+    <%- include('partials/navigation')%>
+    <main>
+      <div id="container"></div>
+      <div class="frame">
+        <div class="frame__title-wrap">
+          <div class="frame__links"></div>
+        </div>
+        <p class="frame__credits">
+          Envianos Mensaje /
+          <a
+            href="https://danyveneno.github.io/tarjetadepresentacion/"
+            target="_blank"
+            >Tarjeta De Presentación</a
+          >
+        </p>
+        <div class="frame__demos">
+          <a
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#sitioweb"
+            id="websiteshadow"
+            class="frame__demo--current"
+            >Sitio Web</a
+          >
+          <a
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#blogcms"
+            id="blogshadow"
+            class="frame__demo"
+            >Blog</a
+          >
+
+          <a
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#tiendaenlinea"
+            id="tiendaenlineashadow"
+            class="frame__demo"
+            >Tienda</a
+          >
+          <a
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#redessociales"
+            id="redesshadow"
+            class="frame__demo"
+            >Redes</a
+          ><br />
+          <a
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#aplichaciones"
+            id="appshadow"
+            class="frame__demo"
+            >Aplicaciones</a
+          >
+          <a
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#vlog"
+            id="vlogshadow"
+            class="frame__demo"
+            >VideoVlog</a
+          >
+          <a
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#landing"
+            id="landshadow"
+            class="frame__demo"
+            >Pagina de Aterizaje</a
+          >
+          <!--<a href="index-brain.html" class="frame__demo"
+             class="frame__demo frame__demo--current"
+            >Brain</a>-->
+        </div>
+        <div class="frame__deco">
+          <!--<a href="index.ejs">
+            <img src="./img/logo-jv.png" width="12%" alt="logo"
+          /></a>-->
+
+          <!--
+          <span class="frame__deco-inner">Amnesia - Bogotá</span>-->
+        </div>
+      </div>
+      <!-- /frame -->
+      <div class="content">
+        <div class="content__item">
+          <button class="content__button">Servicios</button>
+        </div>
+        <div class="content__item content__item--details">
+          <h3 class="content__location">YEHIIBHII</h3>
+          <h1 class="content__title">Servicios</h1>
+          <p class="content__date">2023</p>
+        </div>
+        <div
+          class="content__item content__item--details content__item--columns"
+        >
+          <div class="content__inner">
+            <span class="content__inner-item content__inner-item--date"
+              >Diseño Grafíco</span
+            >
+
+            <span class="content__inner-item">Logotipos</span>
+            <span class="content__inner-item">Imagotipos</span>
+            <span class="content__inner-item">Isotipos</span>
+            <span class="content__inner-item">Comunicación Visual</span>
+            <span class="content__inner-item">Creación de contenido</span>
+            <span class="content__inner-item">Empaque De Producto</span>
+            <span class="content__inner-item"
+              >Decoración Publicitaria Externa</span
+            >
+            <span class="content__inner-item"
+              >Decoración Publicitaria Interna</span
+            >
+            <span class="content__inner-item">Trajetas de Presentación</span>
+            <span class="content__inner-item">Papeleria</span>
+            <span class="content__inner-item">Edición Audiovisual</span>
+            <span class="content__inner-item"
+              >Personalización Textil(Especialistas)</span
+            >
+            <span class="content__inner-item">Sublimación</span>
+            <span class="content__inner-item">Stickers</span>
+            <span class="content__inner-item">Serigrafia Profesional</span>
+            <span class="content__inner-item">Vinil Impreso y corte</span>
+            <span class="content__inner-item"
+              >Manual de Identidad Comercial</span
+            >
+          </div>
+          <div class="content__inner">
+            <span class="content__inner-item content__inner-item--date"
+              >Desarrollo Web</span
+            >
+            <span class="content__inner-item"
+              >Software administración interna</span
+            >
+            <span class="content__inner-item">Sitios Web</span>
+            <span class="content__inner-item">Paginas Web</span>
+            <span class="content__inner-item">Paginas de aterrizaje</span>
+            <span class="content__inner-item">Blog(CMS)</span>
+            <span class="content__inner-item">Tiendas en linea</span>
+            <span class="content__inner-item">Marketing Digital</span>
+            <span class="content__inner-item">Redes Sociales</span>
+            <span class="content__inner-item">VideoVlog</span>
+            <span class="content__inner-item">Apps Web/Movil</span>
+            <span class="content__inner-item">Videojuegos 3D</span>
+            <span class="content__inner-item">Videojuegos 2D</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--sitioweb-->
+    <div
+      class="modal fade bg-dark bg-opacity-75 rounded pt-10 pb-10"
+      id="sitioweb"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Sitio Web / Canal Uno
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-dark bg-opacity-75 rounded pt-10 pb-10">
+            <div
+              class="card bg-dark bg-opacity-75 rounded pt-10 pb-10"
+              id="canaluno"
+              style="width: 100%"
+            >
+              <img
+                src="/img/modal1.jpg"
+                class="card-img-top"
+                id="jvimg"
+                width="100%"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sitio Web</h5>
+                <hr />
+                <p class="card-text">
+                  La principal función de tener un sitio web es el de ser tu
+                  carta de presentación, ante los posibles personas que esten
+                  buscando tus productos y/o servicios.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  <a
+                    href="https://danyveneno.github.io/promo2023/"
+                    class="card-link"
+                    target="_blank"
+                    >Promoción Webpack 2023</a
+                  >
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  A second item
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  A third item
+                </li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://youtu.be/6o0OTUGrwOM"
+                  class="card-link"
+                  target="_blank"
+                  >Verlo en Youtube</a
+                >
+                <a href="#0" class="card-link" target="_blank">Encuesta</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-dark">
+              Gracias por contactarnos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--blog-->
+    <div
+      class="modal fade bg-dark bg-opacity-75 rounded pt-10 pb-10"
+      id="blogcms"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Blog(cms) / Canal Dos
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-dark bg-opacity-75 rounded pt-10 pb-10">
+            <div
+              class="card bg-dark bg-opacity-75 rounded pt-10 pb-10"
+              style="width: 100%"
+            >
+              <img
+                src="/img/blogcms.jpg"
+                class="card-img-top"
+                width="100%"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Blog ó CMS</h5>
+                <p class="card-text">
+                  El Blog es otro de los canales que conforman un ecosistema
+                  digital comercial y su principal funcion es el de escribir
+                  explicitamente acerca de tus productos y/o servicios para las
+                  personas prospecto sepan más acerca de por que vale más tu
+                  opción a diferencia de tu competencia.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  <a
+                    href="https://danyveneno.github.io/promo2023/"
+                    class="card-link"
+                    target="_blank"
+                    >Promoción Webpack 2023</a
+                  >
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  A second item
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  A third item
+                </li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://youtu.be/6o0OTUGrwOM"
+                  class="card-link"
+                  target="_blank"
+                  >Verlo en Youtube</a
+                >
+                <a href="#0" class="card-link" target="_blank">Encuesta</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-dark">
+              Gracias por contactarnos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--tienda en linea-->
+    <div
+      class="modal fade bg-dark bg-opacity-75 rounded pt-10 pb-10"
+      id="tiendaenlinea"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Tienda en Linea / Canal Tres
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-dark bg-opacity-75 rounded pt-10 pb-10">
+            <div
+              class="card bg-dark bg-opacity-75 rounded pt-10 pb-10"
+              style="width: 100%"
+            >
+              <img
+                src="/img/tienda-en-linea.jpg"
+                class="card-img-top"
+                width="100%"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tienda en Linea</h5>
+                <p class="card-text">
+                  Este canal es uno de los canales que las empresas adoptarón
+                  más en los ultimos 3 años de una forma reactiva ya que la
+                  temporada de cuarentena asi lo propuso, aunque en la realidad
+                  la mayoria no lo tenian planeado, para la integración y
+                  desarrollo de este canal es preciso tener un plan desarrollado
+                  si tienes dudas al respecto comunicate con nosotros....
+                  <a
+                    href="https://danyveneno.github.io/tarjetadepresentacion/"
+                    class="card-link"
+                    target="_blank"
+                    >Tarjeta de Presentación</a
+                  >
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  <a
+                    href="https://danyveneno.github.io/promo2023/"
+                    class="card-link"
+                    >Promoción Webpack 2023</a
+                  >
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  A second item
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  A third item
+                </li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://youtu.be/HfCawjHxWwA"
+                  class="card-link"
+                  target="_blank"
+                  >Verlo en Youtube</a
+                >
+                <a
+                  href="https://docs.google.com/forms/d/1T5AcNSXRStpbYwswtv7oYjFa6riDPjbw7tLaIoYUKtE/edit"
+                  class="card-link"
+                  target="_blank"
+                  >Encuesta</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-dark">
+              Gracias por contactarnos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- redes sociales-->
+    <div
+      class="modal fade bg-dark bg-opacity-75 rounded pt-10 pb-10"
+      id="redessociales"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Redes Sociales / Canal Cuatro
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-dark bg-opacity-75 rounded pt-10 pb-10">
+            <div
+              class="card bg-dark bg-opacity-75 rounded pt-10 pb-10"
+              style="width: 100%"
+            >
+              <img
+                src="/img/redes-sociales.jpg"
+                class="card-img-top"
+                width="100%"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Redes Sociales</h5>
+                <p class="card-text">
+                  Las redes sociales como conjunto de canales ya que estos son
+                  empresas privadas que afortunada o desafortunadamente todos
+                  estamos ahi con una cuenta bueno pues hay que darles un uso
+                  que de alguna forma nos convenga ahi en redes sociales es
+                  donde estan los clientes potenciales que estamos buscando.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  <a
+                    href="https://danyveneno.github.io/promo2023/"
+                    class="card-link"
+                    target="_blank"
+                    >Promoción Webpack 2023</a
+                  >
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  <a href="#0" class="card-link">Proxíma Promoción</a>
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  A second item
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  A third item
+                </li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://youtu.be/brC_U5JUAXI"
+                  class="card-link"
+                  target="_blank"
+                  >Verlo en Youtube</a
+                >
+                <a
+                  href="https://docs.google.com/forms/d/1T5AcNSXRStpbYwswtv7oYjFa6riDPjbw7tLaIoYUKtE/edit"
+                  class="card-link"
+                  target="_blank"
+                  >Encuesta</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-dark">
+              Gracias por contactarnos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--aplicaciones-->
+
+    <div
+      class="modal fade bg-dark bg-opacity-75 rounded pt-10 pb-10"
+      id="aplichaciones"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Aplicaciones / Canal Cinco
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-dark bg-opacity-75 rounded pt-10 pb-10">
+            <div
+              class="card bg-dark bg-opacity-75 rounded pt-10 pb-10"
+              style="width: 100%"
+            >
+              <img
+                src="/img/aplicaciones.jpg"
+                class="card-img-top"
+                width="100%"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Aplicaciones</h5>
+                <p class="card-text">
+                  Este canal es uno de los que estan teniendo más auge en la
+                  actualidad. ademas de ser uno de los que mas variables tienen
+                  para ser integrados y desarrolladso para tus productos y/o
+                  servicios ya que tiene que ver:
+                  <strong
+                    >Sistema Operativo | Movíl ó Escritorio | Tecnologias con
+                    las cuales serán desarrolladas.</strong
+                  >
+                  y finalmente las necesidades de tu publico objetivo.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  <a
+                    href="https://drive.google.com/file/d/1EKK_uCwttfHGBQJpFVbPI8khY_zAqmZp/view?usp=sharing"
+                    class="card-link"
+                    target="_blank"
+                    >Descarga el Paquete</a
+                  >
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  <a
+                    href="https://danyveneno.github.io/promo2023/"
+                    class="card-link"
+                    >Promoción Webpack 2023</a
+                  >
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  A second item
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  A third item
+                </li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://youtu.be/KFXN73_JBDs"
+                  class="card-link"
+                  target="_blank"
+                  >Verlo en Youtube</a
+                >
+                <a
+                  href="https://docs.google.com/forms/d/1T5AcNSXRStpbYwswtv7oYjFa6riDPjbw7tLaIoYUKtE/edit"
+                  class="card-link"
+                  target="_blank"
+                  >Encuesta</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-dark">
+              Gracias por contactarnos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--videovlog-->
+    <div
+      class="modal fade bg-dark bg-opacity-75 rounded pt-10 pb-10"
+      id="vlog"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              VideoVlog / Canal Seis
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-dark bg-opacity-75 rounded pt-10 pb-10">
+            <div
+              class="card bg-dark bg-opacity-75 rounded pt-10 pb-10"
+              style="width: 100%"
+            >
+              <img
+                src="/img/videovlog.jpg"
+                class="card-img-top"
+                width="100%"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">VideoVlog</h5>
+                <p class="card-text">
+                  Este canal se refiere a tu canal de Youtube, solo que tiene un
+                  gran porcentaje de influencia en la descición que tomamos para
+                  adquirir algun producto y/o servicios, es por esta razón que
+                  lo tomamos como un canal especial ya que tiene un gran
+                  parecido a algo que no es ajeno y que conocemos muy bien la
+                  TV..
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  <a
+                    href="https://drive.google.com/file/d/1EKK_uCwttfHGBQJpFVbPI8khY_zAqmZp/view?usp=sharing"
+                    class="card-link"
+                    target="_blank"
+                    >Descarga el Paquete</a
+                  >
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  <a
+                    href="https://danyveneno.github.io/promo2023/"
+                    class="card-link"
+                    >Promoción Webpack 2023</a
+                  >
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  A second item
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  A third item
+                </li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://youtu.be/pC5vUgoweiA"
+                  class="card-link"
+                  target="_blank"
+                  >Verlo en Youtube</a
+                >
+                <a
+                  href="https://docs.google.com/forms/d/1T5AcNSXRStpbYwswtv7oYjFa6riDPjbw7tLaIoYUKtE/edit"
+                  class="card-link"
+                  target="_blank"
+                  >Encuesta</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-dark">
+              Gracias por contactarnos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--landing-->
+    <div
+      class="modal fade bg-dark bg-opacity-75 rounded pt-10 pb-10"
+      id="landing"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Pagina de Aterrizaje / Canal Siete
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-dark bg-opacity-75 rounded pt-10 pb-10">
+            <div
+              class="card bg-dark bg-opacity-75 rounded pt-10 pb-10"
+              style="width: 100%"
+            >
+              <img
+                src="/img/paginas-de-aterrizaje.jpg"
+                class="card-img-top"
+                width="100%"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pagina de Aterrizaje</h5>
+                <p class="card-text">
+                  Las paginas de aterrizaje son empleadas o se desarrollan en el
+                  transcurso de una una campaña de marketing digital que tiene
+                  una función especifica y además es eventual.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  <a
+                    href="https://drive.google.com/file/d/1EKK_uCwttfHGBQJpFVbPI8khY_zAqmZp/view?usp=sharing"
+                    class="card-link"
+                    target="_blank"
+                    >Descarga el Paquete</a
+                  >
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  <a
+                    href="https://danyveneno.github.io/promo2023/"
+                    class="card-link"
+                    >Promoción Webpack 2023</a
+                  >
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  A second item
+                </li>
+                <li class="list-group-item bg-dark bg-opacity-75">
+                  A third item
+                </li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://youtu.be/GFQuV1CxhDw"
+                  class="card-link"
+                  target="_blank"
+                  >Verlo en Youtube</a
+                >
+                <a
+                  href="https://docs.google.com/forms/d/1T5AcNSXRStpbYwswtv7oYjFa6riDPjbw7tLaIoYUKtE/edit"
+                  class="card-link"
+                  target="_blank"
+                  >Encuesta</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-dark">
+              Gracias por contactarnos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/ico.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/charming.min.js"></script>
+    <script src="js/demo.js"></script>
+    <!--<script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>-->
+  </body>
+  <%- include('partials/footer')%>
+</html>

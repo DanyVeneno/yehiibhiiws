@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="" en>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= title %></title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/site.webmanifest" />
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <%- include('partials/head')%>
+  </head>
+  <body>
+    <%- include('partials/navigation')%>
+    <div class="laid">
+      <img src="/img/newblack.png" alt="" />
+    </div>
+    <div id="app"></div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+    <main
+      class="vh-150 container pt-2 text-center d-flex justify-content-center align-items-center"
+    >
+    
+      <section>
+        <h1 display-1>Nosotros</h1>
+        <hr />
+        <br />
+        <p class="bg-dark bg-opacity-75 rounded .pt-10 .pb-10" id="about">
+          <br/>
+          <br/>
+          <strong>Misión:</strong> Desarrollamos herramientas digitales para la
+          transformación y/o migración de tus productos y servicios al mundo
+          digital,ademàs complementar con otros servicios de imagen comercial.
+          <br />
+          <br />
+          <strong>Visión:</strong> Queremos estar presentes el tiempo necesario
+          durante el proceso de migración del Offline al Online de tus productos
+          y/o servicios.
+          <br />
+          <br />
+          <strong>Valores:</strong> Estamos convencidos de que necesitamos
+          relacionarnos comercialmente basados en necesidades reales que nos
+          distinguen como seres-Humanos y eso implica cubrir necesidades
+          <strong>Funcionales</strong>, <strong>Emocionales</strong>,
+          <strong>Sociales.</strong>
+          <br />
+          <br/>
+        <br/>
+        <br/>
+        </p>
+        
+      </section>
+    </main>
+    <br/>
+    <br/>
+    <br/>
+    <div
+      class=" container pt-2 align-items-center justify-content-around mb-100 d-flex mt-400"
+    >
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <section class="col">
+          <!--id="llamanos"-->
+          <div class="card h-70" id="llamanos">
+            <h1 class="titulo">Necesidades Funcionales</h1>
+            <img
+              src="/img/phone.png"
+              class="card-img-top"
+              alt="telefono"
+              id="bgimg"
+            />
+            <div class="card-body">
+              <p>
+                
+                Se refieren a las características o requisitos que un producto,
+                servicio o sistema debe tener para cumplir con su propósito o
+                función principal de manera efectiva. satisfacer las necesidades
+                de los usuarios y cumplir con sus objetivos.
+              </p>
+              
+          </div>
+          <div class="card-footer" id="piedepaginaUno">
+             
+          </div>
+        </section>
+
+        <section class="col">
+          <div class="card h-70" id="mensajes">
+            <h1 class="titulo">Necesidades Emocionales</h1>
+            <img src="/img/email.png" class="card-img-top" alt="mensaje" />
+            <div class="card-body">
+              <p>
+                Satisfacer estas necesidades emocionales es fundamental para el
+                bienestar emocional y la felicidad de una persona. La falta de
+                satisfacción de estas necesidades puede conducir a la ansiedad, la
+                depresión y otros problemas emocionales.
+              </p>
+            </div>
+            <div class="card-footer" id="piedepaginaDos">
+             
+            </div>
+          </div>
+        </section>
+        <section class="col">
+          <div class="card h-70" id="mailing">
+            <h1 class="titulo">Necesidades Sociales</h1>
+            <img src="  /img/message.png" class="card-img-top" alt="mail" />
+            <div class="card-body">
+              <p>
+                Las necesidades sociales 
+                se refieren a las necesidades que tiene una persona de ser parte de
+                una comunidad o grupo social y de tener relaciones significativas y
+                satisfactorias con otras personas.
+              </p>
+            </div>
+            <div class="card-footer" id="piedepaginaTres">
+             
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <%- include('partials/footer')%>
+  </body>
+</html>

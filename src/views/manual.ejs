@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title><%= title %></title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+        <link rel="manifest" href="/img/site.webmanifest">
+        <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <%- include('partials/head')%>
+    </head>
+    <body>
+        <!--align-items-center justify-content-center -->
+        <%- include('partials/navigation')%>
+
+        <main class="vh-60 container mt-800 text-center d-flex">
+            
+            <section class="manual">
+                <br>
+                <br>
+              <h1 display-1> <strong>Manual De Identidad</strong></h1>
+              <hr>
+              <br>
+              <p class="bg-dark bg-opacity-75 rounded pt-10 pb-10" id="service">
+                
+                <strong>¿Qué es un Manual De Identidad Comercial?</strong>
+                <br>
+
+                Es un documento en el cual se describen las directrices que desarrollan el concepto de 
+                identidad de la organizaciòn que representa y de la cual se esta emitiendo dicho documento con el objetivo de mantener una simetria de los objetos graficos que representan la imagen de la empresa o marca personal.
+                <br>
+                <br>
+
+                El cual se integra del logotipo, los colores, la tipografia. Ademàs de como se aplicaran
+                en los diferentes objetos que serviran y representaran la imagen de la marca.
+                
+              </p>    
+              <br>          
+            </section>                       
+       </main>
+       <main class="vh-50 container mt-200 text-center d-flex mt-">
+            
+        <section class="manual">
+            <br>
+            <br>
+          <!--<h1 display-1> <strong>Manual De Identidad</strong></h1>
+          <hr>-->
+          <br>
+          <p class="bg-dark bg-opacity-75 rounded pt-10 pb-10" id="service">
+            
+            <strong>¿Quien debe tener un manual de identidad comercial?</strong>
+            <br>
+            
+            Lo ideal, es que aquella persona u organizaciòn que tenga la necesidad de comercializar algun producto y/o servicio tenga una imagen grafica que transmita la escencia de los mismos a sus clientes y/o prospectos.
+            <br>
+            <br>           
+          </p>    
+                     
+        </section> 
+                 
+         </main>   
+         <main class="vh-100 container mt-200 text-center d-flex mt-">
+            
+          <section class="manual">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/img/carruseluno.png" class="d-block w-100" alt="fruta">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/carruseldos.png" class="d-block w-100" alt="fruta">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/carruseltres.png" class="d-block w-100" alt="fruta">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>   
+                       
+          </section>            
+           </main>      
+           
+       <%- include('partials/footer')%>
+    </body>
+</html>

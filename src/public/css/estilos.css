@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+i {
+  color: #cfff98;
+}
+.laid {
+  position: fixed;
+  /*background-image: url(../img/newblack.png);*/
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+  width: 100%;
+
+  z-index: -1;
+}
+.laid2 {
+  position: fixed;
+  /*background-image: url(../img/newblack.png);*/
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  height: auto;
+
+  z-index: -1;
+}
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  line-height: 1.7;
+
+  height: 100vh;
+  /*background-color: hsl(0, 0%, 4%);
+  background-image: radial-gradient(
+      650px circle at 0% 0%,
+      hsl(76, 41%, 35%) 15%,
+      hsl(66, 41%, 30%) 35%,
+      hsl(79, 41%, 20%) 75%,
+      hsl(71, 40%, 19%) 80%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1250px circle at 100% 100%,
+      hsl(69, 41%, 45%) 15%,
+      hsl(76, 41%, 30%) 35%,
+      hsl(71, 41%, 20%) 75%,
+      hsl(71, 40%, 19%) 80%,
+      transparent 100%
+    );*/
+}
+
+/*@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}*/
+
+/*body {
+  background-color: #f9a826;
+}*/
+
+.rows {
+  height: 100vh;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.575rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #dadbdb;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #dadbdb;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 8px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.card {
+  padding: 20px;
+  background-color: rgba(29, 29, 29, 0.671);
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.form-control:focus {
+  color: #313131;
+  background-color: rgba(29, 29, 29, 0.671);
+  border-color: #cfff98;
+  outline: 0;
+  box-shadow: none;
+}
+
+.border-rad {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  color: #292929;
+  background-color: #cfff98;
+  border-color: #cfff98;
+}
+
+.border-rad:hover {
+  background-color: #363636;
+  border-color: #cfff98;
+}
