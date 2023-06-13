@@ -298,6 +298,9 @@ a {
   /*background-position: center;
     background-attachment: fixed;*/
 }
+#nosotross {
+  border: yellowgreen 4px solid;
+}
 #correo {
   /*position:absolute;
    border: #efefef 1px dashed;*/
