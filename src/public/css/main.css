@@ -315,6 +315,9 @@ a {
   /*background-position: center;
     background-attachment: fixed;*/
 }
+#about {
+  border: yellowgreen 4px solid;
+}
 #llamanos {
   color: #e4e4e4;
   background-color: rgba(14, 14, 14, 0.435);
