@@ -317,6 +317,11 @@ a {
 }
 #about {
   border: yellowgreen 4px solid;
+  border-radius: 8px 8px 8px;
+  -webkit-border-radius: 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px;
+  -ms-border-radius: 8px 8px 8px;
+  -o-border-radius: 8px 8px 8px;
 }
 #llamanos {
   color: #e4e4e4;
